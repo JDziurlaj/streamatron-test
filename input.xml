@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CastVoteRecordReport xmlns:xsi="http://www.w3.org/2001/XMLScheama-instance"
+                          xmlns="http://itl.nist.gov/ns/voting/1500-103/v1">
+   <Election xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 ObjectId="_AK2014General">
+      <Candidate ObjectId="_1AEF">         
+         <Name>Edward FitzGerald and Sharen Swartz Neuhardt</Name>
+         <PartyId>_Democratic</PartyId>
+      </Candidate>
+      <Candidate ObjectId="_1AJK">         
+         <Name>John Kasich and Mary Taylor</Name>
+         <PartyId>_Republican</PartyId>
+      </Candidate>
+      <Contest xsi:type="CandidateContest" ObjectId="_1GO">         
+         <ContestSelection xsi:type="CandidateSelection" ObjectId="_CS1AEF">
+            <CandidateIds>_1AEF</CandidateIds>
+         </ContestSelection>
+         <ContestSelection xsi:type="CandidateSelection" ObjectId="_CS1AJK">
+            <CandidateIds>_1AJK</CandidateIds>
+         </ContestSelection>         
+         <Name>For Governor and Lieutenant Governor</Name>
+         <VoteVariation>rcv</VoteVariation>
+         <VotesAllowed>1</VotesAllowed>
+      </Contest>   
+      <ElectionScopeId>gpu-precinct</ElectionScopeId>
+      <Name>2014 General Election</Name>
+   </Election>
+   <GeneratedDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2018-07-15T00:00:00Z</GeneratedDate>
+   <GpUnit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               ObjectId="gpu-precinct">
+      <Code>
+         <Type>local-level</Type>
+         <Value>77</Value>
+      </Code>
+      <Type>precinct</Type>
+   </GpUnit>
+   <Party xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              ObjectId="_Democratic">
+      <Name>Democratic</Name>
+   </Party>   
+   <Party xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              ObjectId="_Republican">
+      <Name>Republican</Name>
+   </Party>   
+   <ReportGeneratingDeviceIds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">rd</ReportGeneratingDeviceIds>
+   <ReportingDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ObjectId="rd">
+      <Application>Ballot Marker</Application>
+      <Manufacturer>Hilton Roscoe LLC</Manufacturer>
+   </ReportingDevice>
+   <ReportType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">originating-device-export</ReportType>
+   <Version xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.0.0</Version>
+   <CVR>
+      <BallotStyleId>_01-0052-01</BallotStyleId>
+      <CreatingDeviceId>rd</CreatingDeviceId>
+      <CurrentSnapshotId>cvr-1</CurrentSnapshotId>
+      <CVRSnapshot ObjectId="cvr-1">
+         <CVRContest>    
+            <ContestId>_1GO</ContestId>
+            <CVRContestSelection>
+               <ContestSelectionId>_CS1AEF</ContestSelectionId>
+               <Rank>1</Rank>
+               <SelectionPosition>
+                  <HasIndication>unknown</HasIndication>
+                  <NumberVotes>1</NumberVotes>
+                  <Position>136</Position>
+                  <Rank>1</Rank>
+               </SelectionPosition>
+               <TotalNumberVotes>1</TotalNumberVotes>
+            </CVRContestSelection>          
+         </CVRContest>       
+         <Type>original</Type>
+      </CVRSnapshot>
+      <ElectionId>_AK2014General</ElectionId>
+   </CVR>   
+</CastVoteRecordReport>
